@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush's gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("images/image.jpg");
+    }
+    .left{
+        /* float: left; */
+        display: inline-block;
+        /* border: 2px solid red; */
+        /* width: 30%; */
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .mid{
+        position: fixed;
+        left: 30%;
+        top: 5px;
+        display: block;
+        margin: 12px auto;
+        /* padding: 0; */
+        /* display: inline-block; */
+        /* border: 2px solid green; */
+        width: 38%;
+    }
+    .right{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        /* float: right; */
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        /* width: 30%; */
+    }
+
+    .navbar li{
+        display: inline-block;
+        /* color: white; */
+        margin-left: 25px;
+        font-size: 20px;
+
+        
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    .navbar li a#home{
+        text-decoration: underline;
+        color: gray;
+        
+
+    }
+    .navbar li a#home:hover{
+        color: rgb(218, 187, 221);
+        
+
+    }
+    .navbar li a:hover{
+        color: aqua;
+        /* background-color: white; */
+
+    }
+    .left img{
+        width: 100px;
+        height: 40px;
+        filter: invert();
+    }
+    .btn{
+        margin-right: 10px;
+        color: white;
+        background-color: rgb(16, 106, 114);
+        border: 1px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 6px;
+        /* margin: 5px 15 px; */
+
+
+
+    }
+    .btn:hover{
+        background-color: rgb(51, 176, 188);
+        color: gray;
+    }
+
+    .container{
+        /* border: 2px solid yellow; */
+        width: 90%;
+        height: 1000px;
+        padding: 10px;
+    }
+    .data{
+        padding: 10%;
+        background-color: transparent 60%;
+    }
+    input{
+        border-radius: 30px;
+        text-align: center;
+        color: rgb(9, 114, 234);
+        display: block;
+        background-color: rgb(12, 12, 12);
+        width: 300px;
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+    .enter{
+        margin-left: 147px;
+        display: inline-block;
+        width: 200px;
+
+    }
+
+</style>
+<body>
+    <header class = "header">
+        <div class="left">
+            <img src="images/logo.jpg" alt="logo" width="40px">
+            <div>Piyush's GYM</div>            
+        </div>
+        <div class="mid">
+            <ul class = "navbar">
+                <li><a href="file:///D:/vs%20code/html/PROJECT%20AND%20GAME/projects/priject1/gym1.html#" id = "home" target="_blank">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calci</a></li>
+                <li><a href="#">Conatct Us</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">contact num</button>
+            <button class="btn">email us</button>
+        </div>
+
+    </header>
+
+
+    <div class="container">
+        <form action="backend.php" method="get" class = "data">
+            <div>
+            <input type="text" name="uname" placeholder="enter yor name">
+
+            </div>
+            <div>
+            <input type="text" name="email" placeholder="enter your email id">
+
+            </div>
+            <div>
+            <input type="text" name="occupation" placeholder="what do u do?">
+
+            </div>
+            <div>
+            <input type="number" name="age" placeholder="whats ur age">
+
+            </div>
+            <div>
+            <input type="submit" value="submit" class = "enter">
+
+            </div>
+            <div>
+            <input type="reset" value="clear" class = "enter">
+
+            </div>
+        </form>
+
+
+    </div>
+    
+</body>
+</html>
