@@ -18,9 +18,122 @@
 #navbar{
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    
 }
 
 .items{
     display: flex;
     align-items: center;
 }
+#logo{
+    margin: 0px 10px;
+
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+
+}
+
+
+#navbar ul{
+
+    display: flex;
+    margin: 0px 100px;
+}
+#navbar ul li{
+    margin: 0px 5px;
+    list-style: none;
+
+}
+
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+    padding: 2px;
+
+}
+
+
+#navbar ul li a:hover{
+    display: block;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    padding: 2px;
+
+}
+
+
+
+/* HOME SECTION  */
+
+
+.home{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px 150px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    background: url("../bg1.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+p{
+    text-align: center;
+    padding:20px;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px aliceblue;
+
+}
+.home h1{
+    text-align: center;
+}
+
+.primary{
+    font-size: 2rem;
+    padding: 15px;
+    color: black;
+    text-shadow: 2px 2px aliceblue;
+}
+
+.btn{
+    background-color: aquamarine;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(141, 202, 231);
+    color: gray;
+    
+}
+
