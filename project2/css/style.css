@@ -89,7 +89,7 @@
 .home{
     display:flex;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 20px;
     padding: 20px 150px;
     height: 400px;
@@ -136,4 +136,139 @@ p{
     color: gray;
     
 }
+
+
+/* our servises  */
+
+.service{
+    /* border: 1px solid black; */
+    margin-top: 78px;
+    background-color: aliceblue;
+}
+
+/* .service::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../bg.jpg");
+    z-index: -1;
+    opacity: 0.3;
+} */
+
+.service h1{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.service div{
+    display: flex;
+    align-items: center;
+}
+.service div .box{
+    flex-direction: column;
+
+    background-color: rgb(226, 239, 252);
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+
+    height: 400px;
+    /* border: 1px solid; */
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+.service div .box img{
+    height: 200px;
+    width: 200px;
+
+}
+
+
+/* clients */
+
+.clients{
+    display: flex;
+    /* margin: 20px 40px; */
+    color: black;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.clients::before{
+    content: "";
+    position: absolute;
+    background: url("../contact.jpg");
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+    opacity: .5;
+}
+.clients div{
+    /* border: 1px solid black; */
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+}
+
+.clients div img{
+
+    height: 250px;
+    width: 250px;
+}
+
+
+
+
+/* contact us    */
+
+.contactUs{
+    margin: 1px;
+    /* border: 1px solid black; */
+    height: 200px;
+
+}
+.contactUs::before{
+    content: "";
+    background-color: rgb(139, 139, 236);
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    height: 35%;
+    width: 100%;
+
+}
+.contactUs h1{
+    text-align: center;
+
+}
+.contactUs div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactUs div form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+
+}
+.contactUs div form input, textarea{
+    margin: 5px;
+    padding: 2px;
+    border-radius: 7px;
+
+    
+    background-color: rgb(156, 174, 229);
+    
+
+}
+
+
+
+
 
