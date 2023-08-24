@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: url("bg.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    color: aliceblue;
+    margin: 2px;
+    border: 1px solid black;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    
+}
+
+.container .heading{
+    font-size: 2rem;
+}
+
+.container .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 270px;
+}
+
+
+.container .user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(113, 48, 113);
+    
+    border-radius: 30px;
+    height: 20%;
+    width: 100%;
+    
+    
+    
+}
+
+
+.user input{
+    padding: 3px;
+    border: 2px solid salmon;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+
+}
+.container .pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(113, 48, 113);
+    
+    border-radius: 30px;
+    height: 20%;
+    width: 100%;
+    
+    
+    
+}
+
+
+.pass input{
+    padding: 3px;
+    border: 2px solid salmon;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.container i{
+    display: flex;
+    position: relative;
+    top: -28;
+    left: 110px;
+
+}
+
+.container .remember{
+    display: flex;
+    height: 40px;
+    width: 270px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputt{
+    border: 1px solid black;
+    margin: 5px;
+    height: 30px;
+    width: 50px;
+}
+
+.inputt input{
+    background-color: rgb(114, 51, 114);
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+
+
