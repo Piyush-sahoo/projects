@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,13 +7,19 @@
 </head>
 <link rel="stylesheet" href="css/style.css">
 <style>
-    body{
+    body {
         color: white;
         margin: 0px;
         padding: 0px;
         background: url("images/image.jpg");
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
     }
-    .left{
+
+    .left {
         /* float: left; */
         display: inline-block;
         /* border: 2px solid red; */
@@ -21,7 +28,8 @@
         top: 20px;
         left: 20px;
     }
-    .mid{
+
+    .mid {
         position: fixed;
         left: 30%;
         top: 5px;
@@ -32,7 +40,8 @@
         /* border: 2px solid green; */
         width: 38%;
     }
-    .right{
+
+    .right {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -42,41 +51,47 @@
         /* width: 30%; */
     }
 
-    .navbar li{
+    .navbar li {
         display: inline-block;
         /* color: white; */
         margin-left: 25px;
         font-size: 20px;
 
-        
+
     }
-    .navbar li a{
+
+    .navbar li a {
         text-decoration: none;
         color: aliceblue;
         cursor: pointer;
     }
-    .navbar li a#home{
+
+    .navbar li a#home {
         text-decoration: underline;
         color: gray;
-        
+
 
     }
-    .navbar li a#home:hover{
+
+    .navbar li a#home:hover {
         color: rgb(218, 187, 221);
-        
+
 
     }
-    .navbar li a:hover{
+
+    .navbar li a:hover {
         color: aqua;
         /* background-color: white; */
 
     }
-    .left img{
+
+    .left img {
         width: 100px;
         height: 40px;
         filter: invert();
     }
-    .btn{
+
+    .btn {
         margin-right: 10px;
         color: white;
         background-color: rgb(16, 106, 114);
@@ -89,22 +104,25 @@
 
 
     }
-    .btn:hover{
+
+    .btn:hover {
         background-color: rgb(51, 176, 188);
         color: gray;
     }
 
-    .container{
+    .container {
         /* border: 2px solid yellow; */
         width: 90%;
         height: 1000px;
         padding: 10px;
     }
-    .data{
+
+    .data {
         padding: 10%;
         background-color: transparent 60%;
     }
-    input{
+
+    input {
         border-radius: 30px;
         text-align: center;
         color: rgb(9, 114, 234);
@@ -114,23 +132,25 @@
         margin-top: 5px;
         margin-left: 100px;
     }
-    .enter{
+
+    .enter {
         margin-left: 147px;
         display: inline-block;
         width: 200px;
 
     }
-
 </style>
+
 <body>
-    <header class = "header">
+    <header class="header">
         <div class="left">
             <img src="images/logo.jpg" alt="logo" width="40px">
-            <div>Piyush's GYM</div>            
+            <div>Piyush's GYM</div>
         </div>
         <div class="mid">
-            <ul class = "navbar">
-                <li><a href="file:///D:/vs%20code/html/PROJECT%20AND%20GAME/projects/priject1/gym1.html#" id = "home" target="_blank">Home</a></li>
+            <ul class="navbar">
+                <li><a href="file:///D:/vs%20code/html/PROJECT%20AND%20GAME/projects/priject1/gym1.html#" id="home"
+                        target="_blank">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Fitness Calci</a></li>
                 <li><a href="#">Conatct Us</a></li>
@@ -146,35 +166,36 @@
 
 
     <div class="container">
-        <form action="backend.php" method="get" class = "data">
+        <form action="backend.php" method="get" class="data">
             <div>
-            <input type="text" name="uname" placeholder="enter yor name">
+                <input type="text" name="uname" placeholder="enter yor name">
 
             </div>
             <div>
-            <input type="text" name="email" placeholder="enter your email id">
+                <input type="text" name="email" placeholder="enter your email id">
 
             </div>
             <div>
-            <input type="text" name="occupation" placeholder="what do u do?">
+                <input type="text" name="occupation" placeholder="what do u do?">
 
             </div>
             <div>
-            <input type="number" name="age" placeholder="whats ur age">
+                <input type="number" name="age" placeholder="whats ur age">
 
             </div>
             <div>
-            <input type="submit" value="submit" class = "enter">
+                <input type="submit" value="submit" class="enter">
 
             </div>
             <div>
-            <input type="reset" value="clear" class = "enter">
+                <input type="reset" value="clear" class="enter">
 
             </div>
         </form>
 
 
     </div>
-    
+
 </body>
+
 </html>
